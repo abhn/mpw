@@ -50,36 +50,48 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="ui styled fluid accordion">
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    Advanced Options
+                </div>
+                <div class="content">
+                    <div class="ui stackable centered celled grid">
+                        <div class="three column row">
+                            <div class="column">
+                                <select id="version" class="ui dropdown">
+                                    <option value="0">V0</option>
+                                    <option value="1">V1</option>
+                                    <option value="2">V2</option>
+                                    <option value="3" selected>V3</option>
+                                </select>
+                            </div>
 
-                <div class="three column row">
-                    <div class="column">
-                        <select id="version" class="ui dropdown">
-                            <option value="0">V0</option>
-                            <option value="1">V1</option>
-                            <option value="2">V2</option>
-                            <option value="3" selected>V3</option>
-                        </select>
-                    </div>
+                            <div class="column">
+                                <div class="ui input">
+                                    <input id="counter" type="number" placeholder="Site Counter" value="1" min="1" max="10"/>
+                                </div>
+                            </div>
 
-                    <div class="column">
-                        <div class="ui input">
-                            <input id="counter" type="number" placeholder="Site Counter" value="1" min="1" max="10"/>
+                            <div class="column">
+                                <select id="type" class="ui dropdown">
+                                    <option value="pin">PIN</option>
+                                    <option value="short">Short</option>
+                                    <option value="basic">Basic</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="long">Long</option>
+                                    <option value="maximum" selected>Maximum</option>
+                                    <option value="name">Name</option>
+                                    <option value="phrase">Phrase</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="column">
-                        <select id="type" class="ui dropdown">
-                            <option value="pin">PIN</option>
-                            <option value="short">Short</option>
-                            <option value="basic">Basic</option>
-                            <option value="medium">Medium</option>
-                            <option value="long">Long</option>
-                            <option value="maximum" selected>Maximum</option>
-                            <option value="name">Name</option>
-                            <option value="phrase">Phrase</option>
-                        </select>
-                    </div>
                 </div>
+            </div>
+            <div class="ui stackable centered celled grid">
+
 
                 <div class="two column row">
                     <div class="five wide column">

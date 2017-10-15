@@ -5,8 +5,12 @@ window.addEventListener("load", () => {
   $('.checkbox').checkbox()
 
   let clipboard = new Clipboard('.btn')
-
   clipboard.on('success', copySuccess)
+
+  // advanced options accordion
+  $('.accordion')
+    .accordion()
+  ;
 
   document.getElementById('computeBtn').addEventListener('click', computePassword)
   document.getElementById('showPass').addEventListener('change', showHidePass)
