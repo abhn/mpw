@@ -16,6 +16,20 @@
     </head>
     <body>
         <div class="container">
+            <div class="ui inverted menu">
+                <a class="active item">
+                    Master Password
+                </a>
+                <a class="item" href="https://github.com/abhn/mpw">
+                    abhn
+                </a>
+                <a class="item" href="https://github.com/tmthrgd/mpw-js">
+                    tmthrgd
+                </a>
+                <a class="item" href="https://github.com/Lyndir/MasterPassword">
+                    Lyndir
+                </a>
+            </div>
             <div class="ui stackable centered celled grid">
                 <div class="three column row">
                     <div class="column">
@@ -67,10 +81,11 @@
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="column">
+                <div class="two column row">
+                    <div class="five wide column">
                         <button class="ui button" id="computeBtn">Compute Password</button>
-
+                    </div>
+                    <div class="eleven wide column">
                         <div class="ui action input">
                             <input id="password" name="password" type="password"/>
                             <button id="copyBtn" class="ui right button btn" data-clipboard-target="#password" disabled="true">
@@ -84,6 +99,12 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="ui inline copied nag">
+                <span class="title">
+                    Password copied to clipboard!
+                </span>
+                <i class="close icon"></i>
             </div>
         </div>
         

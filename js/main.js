@@ -4,12 +4,20 @@ window.addEventListener("load", () => {
   $('.ui.dropdown').dropdown() 
   $('.checkbox').checkbox()
 
-  let clipboard = new Clipboard('.btn');
+  let clipboard = new Clipboard('.btn')
+
+  clipboard.on('success', copySuccess)
 
   document.getElementById('computeBtn').addEventListener('click', computePassword)
   document.getElementById('showPass').addEventListener('change', showHidePass)
-  document.getElementById('copyBtn').addEventListener('click', copyBtnHandler)
 })
+
+let copySuccess = () => {
+  // using nag as a toast
+  $('.copied.nag')
+    .nag('show')
+  ;
+}
 
 let showHidePass = () => {
   if(document.getElementById('showPass').checked) {
