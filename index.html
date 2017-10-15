@@ -8,62 +8,88 @@
         <meta name="apple-itunes-app" content="app-id=510296984" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/main.css?2">
+
+        <link rel="stylesheet" href="css/semantic.min.css"/>
+
+        <script src="js/vendor/jquery.min.js"></script>
+        <script src="js/vendor/semantic.min.js"></script>
     </head>
     <body>
-        <header>
-            <p><strong>BETA</strong> - This site may not yet work on your browser.<br>
-            Passwords are generated locally, your master password is not sent to any server.  See <a href="https://github.com/Lyndir/MasterPassword/tree/master/platform-independent/web-js">the source</a>.</p>
-            <span id="error"></span>
-        </header>
-        <section id="identity" class="active"><form action="#">
-            <h1>Identity</h1>
-            <p>
-                <input id="userName" type="text" placeholder="Your Full Name" /><br>
-                <input id="masterPassword" type="password" placeholder="Your Master Password" /><br>
-                <input type="submit" value="⏎" /><br>
-                <input type="image" src="img/spinner.svg" />
-                <select id="version" class="minimal">
-                    <option value="0">V0</option>
-                    <option value="1">V1</option>
-                    <option value="2">V2</option>
-                    <option value="3" selected>V3</option>
-                </select>
-            </p>
-        </form></section>
+        <div class="container">
+            <div class="ui stackable centered celled grid">
+                <div class="three column row">
+                    <div class="column">
+                        <div class="ui input fluid">
+                            <input id="name" type="text" placeholder="Your Full Name" />
+                        </div>
+                    </div>
 
-        <section id="site">
-            <h1>Site</h1>
-            <p>
-                <input id="siteName" type="text" placeholder="Site Name (eg. apple.com)" /><br>
-                <span class="small">
-                    <input id="siteCounter" type="number" placeholder="Site Counter" min="1" max="100" value="1" class="half" />
-                    <select id="siteType" class="half">
-                        <option value="pin">PIN</option>
-                        <option value="short">Short</option>
-                        <option value="basic">Basic</option>
-                        <option value="medium">Medium</option>
-                        <option value="long" selected>Long</option>
-                        <option value="maximum">Maximum</option>
-                        <option value="name">Name</option>
-                        <option value="phrase">Phrase</option>
-                    </select>
-                </span><br>
-                <h2 id="sitePassword" title="Your password is ..."></h2><br>
-                <input id="logout" type="submit" value="⎋" />
-                <input type="image" src="img/spinner.svg" />
-            </p>
-        </section>
+                    <div class="column">
+                        <div class="ui input fluid">
+                            <input id="masterpass" type="password" placeholder="Your Master Password" />
+                        </div>
+                    </div>  
+                    
+                    <div class="column">
+                        <div class="ui fluid input">
+                            <input id="website" type="text" placeholder="google.com" />
+                        </div>
+                    </div>
+                </div>
 
-        <footer>
-        <p>This page was made possible thanks to <a href="https://tomthorogood.co.uk/" title="Tom Thorogood">tmthrgd</a>'s <a href="https://github.com/tmthrgd/mpw-js">mpw-js</a>.<br>
-        <em><a href="http://masterpasswordapp.com">Master Password</a> is a security product and algorithm by <a href="http://www.lhunath.com" title="Maarten Billemont">Maarten Billemont</a>, <a href="http://www.lyndir.com">Lyndir</a> (&copy; 2011-2014).</em><br>
-        Usage implies agreement with our <a href="http://masterpasswordapp.com/privacy.html">privacy policy and disclaimer</a>.</p>
-        </footer>
+                <div class="three column row">
+                    <div class="column">
+                        <select id="version" class="ui dropdown">
+                            <option value="0">V0</option>
+                            <option value="1">V1</option>
+                            <option value="2">V2</option>
+                            <option value="3" selected>V3</option>
+                        </select>
+                    </div>
 
+                    <div class="column">
+                        <div class="ui input">
+                            <input id="counter" type="number" placeholder="Site Counter" value="1" min="1" max="10"/>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <select id="type" class="ui dropdown">
+                            <option value="pin">PIN</option>
+                            <option value="short">Short</option>
+                            <option value="basic">Basic</option>
+                            <option value="medium">Medium</option>
+                            <option value="long">Long</option>
+                            <option value="maximum" selected>Maximum</option>
+                            <option value="name">Name</option>
+                            <option value="phrase">Phrase</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <button class="ui button" id="computeBtn">Compute Password</button>
+
+                        <div class="ui action input">
+                            <input id="password" name="password" type="password"/>
+                            <button id="copyBtn" class="ui right button btn" data-clipboard-target="#password" disabled="true">
+                                Copy
+                            </button>
+                        </div>
+                        &nbsp;
+                        <div class="ui toggle checkbox">
+                            <label>Show</label>
+                            <input id="showPass" title="show password" name="public" type="checkbox">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <!-- Scripts -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.1.js"><\/script>')</script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.1.min.js"><\/script>')</script>
+        <script src="js/vendor/clipboard.min.js"></script>
+
         <script src="js/dependencies.js?3"></script>
         <script src="js/main.js?3"></script>
     </body>
