@@ -2,6 +2,12 @@
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
+### Demo
+<a href="https://www.nagekar.com/mpw">https://www.nagekar.com/mpw</a>
+
+### Screenshot
+<img src="https://raw.githubusercontent.com/abhn/mpw/master/img/sample.png"/>
+
 ### Introduction
 
 Master Password is a password 'generator' that you can think of as a stateless password manager. Just like any other password manager, you have to remember one secret that is used to unlock several of your online passwords (or offline, doesn't really matter). It takes away the burden of having to remember several different passwords by making you remember just one (and takes away the risk that comes with reusing passwords). However, where Master Password differs from traditional disk based or cloud based password managers is that the password is never stored on the disk or transmitted over the network, but generated each time from a combination of the master password, your username and the website's URL (hence 'generator'). Technically, these are three different strings, but you only have to remember one of them (assuming you remember your name and can copy paste the URL from address bar).
