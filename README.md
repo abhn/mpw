@@ -20,4 +20,4 @@ The algorithm developed by <a href="http://masterpasswordapp.com/algorithm.html"
 This client is a shameless ripoff of the work done by people mentioned above. My small contribution is the UI bit, as I felt the current <a href="https://js.masterpasswordapp.com/">web client</a> doesn't do justice to the otherwise amazing utility. Just like the official web client, this one doesn't send or receive any data from the client, and no piece of data ever leaves the browser. Everything is client-side.
 
 ### Running locally
-If for some reason you prefer running this client locally, just clone this repository and open index.html in your web browser. I won't run on older browsers, however I'm not sure about precise version.
+If for some reason you prefer running this client locally, just clone this repository and open index.html in your web browser.
