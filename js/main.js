@@ -34,6 +34,10 @@ let showHidePass = () => {
 }
 
 let computePassword = () => {
+
+  let loader = document.getElementById('loader')
+  loader.setAttribute('class', 'ui active inverted dimmer')
+
   let name = document.getElementById('name').value
   let password = document.getElementById('masterpass').value
   let website = document.getElementById('website').value
@@ -50,6 +54,7 @@ let computePassword = () => {
   let value = mpw.generate(website, counter, "", type)
 
   value.then((pass) => {
+    loader.setAttribute('class', 'ui inverted dimmer');
     document.getElementById('password').value = pass
   }, (err) => {
     error(err)
