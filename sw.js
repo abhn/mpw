@@ -1,25 +1,25 @@
 var CACHE_NAME = 'mpw-dry-v1';
 var urlsToCache = [
     '/',
-    '/index.html',
-    '/css',
-    '/css/main.css',
-    '/css/semantic.min.css',
-    '/js',
-    '/js/vendor',
-    '/js/vendor/jquery.min.js',
-    '/js/vendor/semantic.min.js',
-    '/js/vendor/clipboard.min.js',
-    '/js/dependencies.js',
-    '/js/main.js',
+    'index.html',
+    'css',
+    'css/main.css',
+    'css/semantic.min.css',
+    'js',
+    'js/vendor',
+    'js/vendor/jquery.min.js',
+    'js/vendor/semantic.min.js',
+    'js/vendor/clipboard.min.js',
+    'js/dependencies.js',
+    'js/main.js',
     'https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin',
     'https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjx4wXg.woff2',
     'https://fonts.gstatic.com/s/lato/v14/S6u9w4BMUTPHh6UVSwiPGQ.woff2',
-    '/js/setImmediate-polyfill.js',
-    '/js/mpw-js/pbkdf2.js',
-    '/js/mpw-js/scrypt.js',
-    '/js/mpw-js/mpw.js',
-    '/img/glider.png'
+    'js/setImmediate-polyfill.js',
+    'js/mpw-js/pbkdf2.js',
+    'js/mpw-js/scrypt.js',
+    'js/mpw-js/mpw.js',
+    'img/glider.png'
 ];
 
 self.addEventListener('install', function(event) {
