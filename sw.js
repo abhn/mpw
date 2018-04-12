@@ -2,11 +2,8 @@ var CACHE_NAME = 'mpw-dry-v1';
 var urlsToCache = [
     '/',
     'index.html',
-    'css',
     'css/main.css',
     'css/semantic.min.css',
-    'js',
-    'js/vendor',
     'js/vendor/jquery.min.js',
     'js/vendor/semantic.min.js',
     'js/vendor/clipboard.min.js',
