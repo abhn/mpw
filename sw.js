@@ -19,6 +19,7 @@ var urlsToCache = [
     '/js/mpw-js/pbkdf2.js',
     '/js/mpw-js/scrypt.js',
     '/js/mpw-js/mpw.js',
+    '/img/glider.png'
 ];
 
 self.addEventListener('install', function(event) {

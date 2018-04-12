@@ -1,6 +1,28 @@
 {
     "short_name": "MPW",
     "name": "Master Password Web",
+    "icons": [
+      {
+        "src": "\/img\/glider.png",
+        "sizes": "128x128",
+        "type": "image\/png"
+      },
+      {
+        "src": "\/img\/glider.png",
+        "sizes": "144x144",
+        "type": "image\/png"
+      },
+      {
+        "src": "\/img\/glider.png",
+        "sizes": "192x192",
+        "type": "image\/png"
+      },
+      {
+        "src": "\/img\/glider.png",
+        "sizes": "256x256",
+        "type": "image\/png"
+      }
+    ],
     "start_url": "./index.html",
     "display": "standalone",
     "theme_color": "#1b1c1d",
