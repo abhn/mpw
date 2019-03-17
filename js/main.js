@@ -47,7 +47,8 @@ let computePassword = () => {
   let type = document.getElementById('type').value
 
   if(!name || !password || !website || !version || !counter || !type) {
-    error('Please fill in all fields')
+    loader.setAttribute('class', 'ui inverted dimmer');
+    return error('Please fill in all fields')
   }
 
   mpw = new MPW(name, password, version);
@@ -62,5 +63,6 @@ let computePassword = () => {
 }
 
 let error = (message) => {
-  console.log(message)
+  alert('all fields are compulsory')
+  return;
 }
